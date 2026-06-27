@@ -565,6 +565,32 @@
     backStrength: 3
   - type: StaticPrice
     price: 175
+  - type: Scope #Misfits Add - scope for rifles with scopes...
+    requireWielding: true
+    zoomLevels:
+    - name: 4x
+      zoom: 1.0
+      offset: 15
+      allowMovement: false
+      doAfter: 0.8
+  - type: ChamberMagazineAmmoProvider
+    autoCycle: false
+    autoEject: false
+    soundAutoEject:
+      path: /Audio/_Goobstation/Weapons/Guns/MagOut/garand_eject.ogg
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/batrifle_cock.ogg
+      params:
+        volume: -3
+    soundBoltClosed:
+      path: /Audio/Weapons/Guns/Bolt/lever_bolt_closed.ogg
+      params:
+        volume: -3
+    soundBoltOpened:
+      path: /Audio/Weapons/Guns/Bolt/lever_bolt_opened.ogg
+      params:
+        volume: -3
+
 # Forge-add-end
 
 # #Misfits Add — Cowboy Repeater, Paciencia, Ratslayer, M1 Carbine, Rangemaster
